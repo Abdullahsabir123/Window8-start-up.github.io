@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .container{
+            margin: auto;
+            display: grid;
+            background-color: blue;
+            grid-gap: 15px;
+            grid-template-columns: 90px 90px 300px 90px 90px;
+            grid-template-rows: auto auto auto auto;
+        }
+        .items{
+            background-color: red;
+           text-align: center; 
+           height: 100px;
+        }
+        .item11{
+            grid-row:3/ span 3;
+            grid-column: 1 / span 2;
+            margin-bottom: 2px;
+        }
+        .item15{
+            grid-column: 1 / span 2;
+            grid-row: 4/ span 1;
+        }
+        .item4{
+            grid-column: 4 /  6;
+        }
+        .item5{
+            grid-column: 4 /  6;
+        }
+        .item6{
+            grid-row:2/ span 1;
+            grid-column: 1 / 2;
+        }
+        .item7{
+            grid-row:2/ span 1;
+            grid-column: 2 / 3;
+        }
+        .item8{
+            grid-row:2/ span 1;
+        } 
+    </style>
+</head>
+
+<body>
+    <center>
+    <div class="container">
+        <div class="items item1">1</div>
+        <div class="items item2">2</div>
+        <div class="items item3">3</div>
+        <div class="items item4">4</div>
+        <div class="items item5">5</div>
+        <div class="items item6">6</div>
+        <div class="items item7">7</div>
+        <div class="items item8">8</div>
+        <div class="items item9">9</div>
+        <div class="items item10">10</div>
+        <div class="items item11">11</div>
+        <div class="items item12">12</div>
+        <div class="items item13">13</div>
+        <div class="items item14">14</div>
+        <div class="items item15">15</div>
+        <div class="items item16">16</div>
+    </div>
+</center>
+</body>
+
+</html>
